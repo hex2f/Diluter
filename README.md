@@ -2,12 +2,14 @@
 An automatic Redux reducer, taking the pain out of Redux.
 ___
 ## Install
-Clone the repo into your project and include Diluter/index.js
+```
+npm i --save Diluter
+```
 
 ## Usage
 ### Create a Store
 ```js
-import Diluter from './Diluter/index.js'
+import Diluter from 'Diluter'
 
 const defaultState = {
   USER: { name: '', id: 0 },
@@ -24,7 +26,7 @@ ReactDOM.render(
 
 ### Connect a Component
 ```js
-import { Connector } from './Diluter/index.js'
+import { Connector } from 'Diluter'
 
 class App extends Component {
   render() {
