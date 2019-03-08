@@ -1,5 +1,9 @@
 import { connect } from 'react-redux'
-import { FilterObjectKeys } from 'Helpers'
+
+export const FilterObjectKeys = (obj, predicate) =>
+  Object.keys(obj)
+    .filter(key => predicate(key))
+    .reduce((res, key) => (res[key] = obj[key], res), {}) // eslint-disable-line
 
 export default function (Component, States = [], Actions = []) {
   const mapStateToProps = state => {

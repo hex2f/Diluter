@@ -3,10 +3,10 @@ import thunk from 'redux-thunk'
 import GenerateReducer from './GenerateReducer'
 import Connector from './Connector'
 
-export default (defaultState) => {
+export default (defaultState, hook) => {
   const mappedReducers = {}
   Object.keys(defaultState).forEach(key => {
-    mappedReducers[key] = GenerateReducer(key, defaultState[key], {})
+    mappedReducers[key] = GenerateReducer(key, defaultState[key], hook)
   })
 
   let reducers = combineReducers(mappedReducers)
