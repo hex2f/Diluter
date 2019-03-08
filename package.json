@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/mobooru/Diluter/issues"
   },
-  "homepage": "https://github.com/mobooru/Diluter#readme"
+  "homepage": "https://github.com/mobooru/Diluter#readme",
+  "dependencies": {
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  }
 }
