@@ -1,6 +1,6 @@
 {
   "name": "diluter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An automatic Redux reducer, taking the pain out of Redux.",
   "main": "index.js",
   "scripts": {
